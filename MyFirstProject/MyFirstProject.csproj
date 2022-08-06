@@ -3,7 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <StartupObject>MyFirstProject.Basic._2Aug.BagInfo</StartupObject>
+	  <StartupObject>MyFirstProject.Test3.Base</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Basic\NewFolder\**" />
+    <EmbeddedResource Remove="Basic\NewFolder\**" />
+    <None Remove="Basic\NewFolder\**" />
+  </ItemGroup>
 
 </Project>

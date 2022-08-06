@@ -12,33 +12,23 @@ namespace MyFirstProject.Test2
             int n = int.Parse(Console.ReadLine());
 
             int s = n * n;
-            int x=0,y=0;
-            if (s >= 100&&s<1000)
+            int n1 = n;
+            int c = 0;
+            while (n1 > 0)
             {
-                int n1 = s % 10;
-                int n2 = s / 10;
-                int s1 = n1 + n2;
-                x = s1;
-                int n3 = s % 100;
-                int n4 = s / 100;
-                int s2 = n3 + n4;
-                y = s2;
-
+                c++;
+                n1 = n1 / 10;
             }
-            else if (s>=1000)
+            int p = 1;
+            while (c > 0)
             {
-                int n1 = s % 1000;
-                int n2 = s / 1000;
-                int s1 = n1 + n2;
-            
-                x=s1;
-                int n3 = s % 100;
-                int n4 = s / 100;
-                int s2 = n3 + n4;
-                y = s2;
-              
+                p = p * 10;
+                c--;
             }
-            if (n == x || n == y)
+            int a = s % p;
+            int b = s / p;
+            int sum = a + b;
+            if (n == sum)
             {
                 Console.WriteLine("Yes");
             }
