@@ -6,11 +6,11 @@ namespace MyFirstProject.Test3
 {
     class Pattern
     {
-        public void DrowP()
+        public void DrowP(int r)
         { int c = 0;
-            for(int i = 1; i <= 4; i++)
+            for(int i = 1; i <= r; i++)
             {
-                for(int k = 1; k <= 5 - i; k++)
+                for(int k = 1; k <= r+1 - i; k++)
                 {
                     Console.Write(" ");
                 }
@@ -25,7 +25,9 @@ namespace MyFirstProject.Test3
         static void Main(string[] args)
         {
             Pattern p = new Pattern();
-            p.DrowP();
+            Console.WriteLine("How Many Row Print:");
+            int r = int.Parse(Console.ReadLine());
+            p.DrowP(r);
         }
     }
 }
