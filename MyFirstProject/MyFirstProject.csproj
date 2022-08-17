@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <StartupObject>MyFirstProject.Basic._10Aug.Search</StartupObject>
+	  <StartupObject>MyFirstProject.Basic._17AugPattern.UpperTringle</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

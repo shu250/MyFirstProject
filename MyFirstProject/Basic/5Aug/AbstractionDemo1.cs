@@ -6,7 +6,7 @@ namespace MyFirstProject.Basic._5Aug
 {
     abstract class Vehicle
     {
-       abstract public void Run();
+        abstract public void Run();
         static int speed = 60;
         public string name = "bmw";
         const int price= 5000000;
@@ -34,7 +34,7 @@ namespace MyFirstProject.Basic._5Aug
     {
         static void Main(string[] args)
         {
-            Car c = new Car();
+           Vehicle c = new Car();
             c.Run();
            // c.Travel();
         }
