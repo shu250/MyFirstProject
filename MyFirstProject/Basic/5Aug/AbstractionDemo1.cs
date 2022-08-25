@@ -27,7 +27,7 @@ namespace MyFirstProject.Basic._5Aug
         {
             Console.WriteLine("Car is Rinning......");
             Console.WriteLine("Name:"+name);
-            base.Travel();
+            //base.Travel();
         } 
     }
     class AbstractionDemo1
@@ -36,7 +36,7 @@ namespace MyFirstProject.Basic._5Aug
         {
            Vehicle c = new Car();
             c.Run();
-           // c.Travel();
+           c.Travel();
         }
     }
 }

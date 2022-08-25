@@ -14,7 +14,11 @@ namespace MyFirstProject.Basic._5Aug
         }
         public int Add()
         {
-            return 3 + 6;
+            return 10;
+        }
+        public void Display()
+        {
+            Console.WriteLine("hii");
         }
     }
     class Car1 : IMovble
@@ -22,6 +26,7 @@ namespace MyFirstProject.Basic._5Aug
        public void Move1()
         {
             Console.WriteLine("Car is Moving.."+IMovble.s);
+            
         }
     }
     class InterfaceDemo1
@@ -32,6 +37,7 @@ namespace MyFirstProject.Basic._5Aug
             c.Move1();
             Console.WriteLine(c.Add());
             IMovble.Show();
+            c.Display();
         }
     }
 }
